@@ -30,6 +30,7 @@ public class GettingStartedApplication {
 
     @GetMapping("/database")
     public String database() {
+        System.out.println("Caleb Corolewski");
         StringBuilder html = new StringBuilder();
 
         try (Connection connection = dataSource.getConnection();
